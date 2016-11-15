@@ -8,7 +8,7 @@ function init_l_like_system() {
 			plus = Math.round(parseInt( info[1] ) * parseInt( info[0] )) / 100;
 		}
 		
-		button = button ? '<span onclick="llike(\'' + button.firstChild.href + '\',this);" class="Llike">' + las_like_system.vote_singular + '</span>' : '<span class="Llike Lnovote">Đã ' + las_like_system.vote_singular + '</span>';		
+		button = button ? '<span onclick="llike(\'' + button.firstChild.href + '\',this);" class="Llike">' + las_like_system.vote_singular + '</span>' : '<span class="Llike Lnovote">' + las_like_system.vote_singular + ' rồi.</span>';		
 		var total_button = '<div class="Lvote" style="margin:3px">' + button + '</div>';
 		if(las_like_system.callback) las_like_system.callback(vote, total_button);
 	}
