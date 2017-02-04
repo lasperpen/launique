@@ -15,7 +15,7 @@ $(document).ready(function() {
 function loadnhac() {
     $('#qtloadingvds').removeClass('an');
     ab = $('#linkvds').val();
-    $('#thongtinnguoigui').load(ab + ' tr.post td.row1 span.poster-profile:eq(0)');
+    $('#thongtinnguoigui').load(ab + ' .user-basic-info');
     $('#thuviennhac').load(ab + ' div.postbody:eq(0)', function() {
         $('#vds_qtan').html($('#thuviennhac table.qtvds .vv a').clone().addClass('khungqtanvds'));
 
